@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Viva Garnacho - Alejandro Garnacho</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+</head>
+<body>
+  <div class="cursor"></div>
+
+  <nav class="navbar">
+    <img class="logo" src="./assets/images/Manchester_United_FC_crest.png" alt="Manchester United Logo">
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul class="nav-menu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#timeline">Highlights</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero" id="home">
+    <video autoplay muted loop class="hero-video">
+      <source src="./assets/videos/garnacho-bicycle-kick.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="hero-content">
+      <h1>Viva <span class="garnacho-highlight">Garnacho</span></h1>
+      <p>Alejandro Garnacho - Manchester United’s Rising Star</p>
+      <a href="#about" class="cta-btn">Explore His Journey</a>
+    </div>
+  </section>
+
+  <div class="main">
+    <section class="about" id="about">
+      <div class="content-container">
+        <div class="facts">
+          <img class="tile-image" src="./assets/images/good.png" alt="Garnacho celebrating">
+          <div class="text-content">
+            <h2 class="section-title">Facts</h2>
+            <p class="card-text">Alejandro Garnacho, born July 1, 2004, in Madrid, is a dual Argentine-Spanish left winger for Manchester United. Joined from Atlético Madrid in 2020 for £420,000, debuted in 2022 vs. Chelsea, and scored his first goal vs. Real Sociedad. He’s won the 2022 FA Youth Cup, 2024 FA Cup (scoring vs. Manchester City), 2023 Puskás Award for an overhead kick vs. Everton, and 2024 Copa América with Argentina.</p>
+          </div>
+        </div>
+        <div class="playing-style">
+          <img class="playing-style-image" src="./assets/images/vsvilla.png" alt="Garnacho vs Chelsea">
+          <div class="text-content">
+            <h2 class="section-title">Playing Style</h2>
+            <p class="card-text">A dynamic left winger with explosive pace, skillful dribbling, and flair. He cuts inside with his right foot for powerful shots or precise crosses. His agility, directness, and spectacular moves—like his award-winning overhead kick—draw comparisons to a young Cristiano Ronaldo.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Updated Career Highlights Section -->
+    <section class="timeline" id="timeline">
+      <h2 class="section-title">Career Highlights</h2>
+      <div class="timeline-container">
+        <div class="timeline-item" data-year="2020">
+          <a href="https://www.youtube.com/watch?v=FIubzVHj3yM" target="_blank">
+            <img src="./assets/images/academy.jpg" alt="2020 Highlight" class="timeline-img">
+          </a>
+          <span class="timeline-year">2020</span>
+          <p>Joins Manchester United from Atlético Madrid</p>
+        </div>
+        <div class="timeline-item" data-year="2022">
+          <a href="https://www.youtube.com/shorts/Bc63-KqM5Xw" target="_blank">
+            <img src="./assets/images/debut.jpg" alt="2022 Highlight" class="timeline-img">
+          </a>
+          <span class="timeline-year">2022</span>
+          <p>First-team debut vs. Chelsea</p>
+        </div>
+        <div class="timeline-item" data-year="2023">
+          <a href="https://www.youtube.com/watch?v=2frAVVPrMLQ" target="_blank">
+            <img src="./assets/images/bicyclekick.jpg" alt="2023 Highlight" class="timeline-img">
+          </a>
+          <span class="timeline-year">2023</span>
+          <p>Wins Puskás Award for overhead kick vs. Everton</p>
+        </div>
+        <div class="timeline-item" data-year="2024">
+          <a href="https://www.youtube.com/watch?v=Vpf6UgMmG08" target="_blank">
+            <img src="./assets/images/facupwinner.jpg" alt="2024 Highlight" class="timeline-img">
+          </a>
+          <span class="timeline-year">2024</span>
+          <p>FA Cup winner, scores vs. Manchester City</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery" id="gallery">
+      <h2 class="section-title">Gallery</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="./assets/images/actionshot.jpg" alt="Action Shot 1" class="gallery-img" data-title="Dynamic Play">
+        </div>
+        <div class="gallery-item">
+          <img src="./assets/images/random.jpg" alt="Action Shot 2" class="gallery-img" data-title="Skillful Dribble">
+        </div>
+        <div class="gallery-item">
+          <img src="./assets/images/celebration.jpg" alt="Celebration" class="gallery-img" data-title="Victory Moment">
+        </div>
+        <div class="gallery-item">
+          <img src="./assets/images/argentina.jpg" alt="Argentina Moment" class="gallery-img" data-title="Copa América Glory">
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <p class="footer-text">Cristiano Ronaldo's Regen | <a href="https://www.manutd.com" target="_blank">Manchester United</a></p>
+  </footer>
+
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+    hamburger.addEventListener("click", () => {
+      hamburger.classList.toggle("active");
+      navMenu.classList.toggle("active");
+    });
+
+    const cursor = document.querySelector(".cursor");
+    document.addEventListener("mousemove", (e) => {
+      cursor.style.left = `${e.pageX}px`;
+      cursor.style.top = `${e.pageY}px`;
+    });
+    document.querySelectorAll("a, .gallery-img, .timeline-img").forEach(el => {
+      el.addEventListener("mouseenter", () => cursor.classList.add("hover"));
+      el.addEventListener("mouseleave", () => cursor.classList.remove("hover"));
+    });
+
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.from(".hero-content", { opacity: 0, y: 50, duration: 1.5, ease: "power3.out" });
+
+    gsap.utils.toArray(".facts, .playing-style, .timeline-item, .gallery-item").forEach((el, i) => {
+      gsap.from(el, {
+        scrollTrigger: { trigger: el, start: "top 80%" },
+        opacity: 0,
+        y: 50,
+        duration: 1,
+        delay: i * 0.2,
+        ease: "power3.out"
+      });
+    });
+
+    document.querySelectorAll(".timeline-item").forEach(item => {
+      item.addEventListener("mouseenter", () => {
+        gsap.to(item, { scale: 1.05, duration: 0.3 });
+      });
+      item.addEventListener("mouseleave", () => {
+        gsap.to(item, { scale: 1, duration: 0.3 });
+      });
+    });
+  </script>
+</body>
+</html>
