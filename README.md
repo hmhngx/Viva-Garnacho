@@ -1,11 +1,11 @@
-Viva Garnacho - Alejandro Garnacho Tribute Website
+# Viva Garnacho - Alejandro Garnacho Tribute Website
 https://hmhngx.github.io/Viva-Garnacho/
 
-Overview
+## Overview
 
 Viva Garnacho is a tribute website dedicated to Alejandro Garnacho, a rising football star playing for Manchester United. The site showcases his career highlights, playing style, and achievements in a visually engaging format with animations, interactive elements, and a responsive design.
 
-Features
+## 🚀 Features 
 
 Custom Cursor: A unique animated cursor that changes on hover.
 
@@ -23,7 +23,7 @@ Animations: Smooth animations using GSAP for enhanced user experience.
 
 Responsive Design: Fully optimized for desktop, tablet, and mobile users.
 
-Technologies Used
+## 🛠️ Tech Stack 
 
 HTML: For structuring the website.
 
@@ -35,10 +35,10 @@ Google Fonts: Used Montserrat and Roboto for a modern typography style.
 
 CDN Libraries: Integrated GSAP and Google Fonts via CDNs.
 
-Credits
+## Credits
 
 This website is inspired by Alejandro Garnacho’s career and achievements. All images and videos belong to their respective owners.
 
-License
+## License
 
 This project is for educational and fan purposes only. Not affiliated with Manchester United or Alejandro Garnacho.
