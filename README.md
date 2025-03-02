@@ -1,5 +1,4 @@
 # Viva Garnacho - Alejandro Garnacho Tribute Website
-https://hmhngx.github.io/Viva-Garnacho/
 
 ## Overview
 
